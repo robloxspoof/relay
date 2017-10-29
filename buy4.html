@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fakepreme</title>
+  <style>
+    .box {
+      width: 100vw;
+      height: 130vh;
+      margin: 0 auto;
+
+    }
+    #box1 {
+
+      color: white;
+    }
+    #box2 {
+      background-color: white;
+    }
+    body {
+      text-align: center;
+      padding: 0 auto;
+      background-color: black;
+    }
+    h1 {
+      font-size: 100px;
+    }
+    h3 {
+      font-family: "Courier New", Courier, monospace;
+    }
+    p {
+      font-family: "Courier New", Courier, monospace;
+    }
+    a {
+      background-color: #ccc;
+    }
+  </style>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script>
+    function paid() {
+      alert('When the payment comes through, the product will be shipped to your address, in 4-7 days.')
+    }
+    function buy() {
+      $('<br><h3>Send $45 worth of bitcoin to this address. Leave the nickname entered above, in the transaction notes. <br><br>1HWghRG9RGNKfHRKBUgycByK8Ai9NGFNg<br><br><a onclick="paid()">I paid!</a></h3>').appendTo('#box2')
+    }
+  </script>
+</head>
+<body>
+  <div class="box" id="box1">
+    <h1>ʄǟӄɛքʀɛʍɛ</h1>
+    <p>Cheapest fake supreme on the market.</p>
+  </div>
+  <div class="box" id="box2">
+    <h1>ǟռօռʏʍօʊֆ ɮʊʏ</h1>
+    <p>No account required.</p>
+    <input type="text" placeholder="Address*">
+    <input type="text" placeholder="Name*">
+    <input type="text" placeholder="Nickname*">
+    <h3><a onclick="buy()">Buy</a></h3>
+  </div>
+</body>
+</html>
